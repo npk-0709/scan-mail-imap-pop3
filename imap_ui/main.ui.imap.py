@@ -1,3 +1,10 @@
+"""
+ * Author: NGUYEN PHU KHUONG (K.AUTO) 
+ * Email: dev.phukhuong0709@hotmail.com
+ * Github: npk-0709
+ * TELE: @khuongdev79
+"""
+
 from ui import *
 from class_read_imap import *
 import threading

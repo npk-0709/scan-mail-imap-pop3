@@ -1,3 +1,10 @@
+"""
+ * Author: NGUYEN PHU KHUONG (K.AUTO) 
+ * Email: dev.phukhuong0709@hotmail.com
+ * Github: npk-0709
+ * TELE: @khuongdev79
+"""
+
 import poplib
 import email
 import html2text
@@ -25,8 +32,6 @@ for i in range(num_messages):
         response, lines, octets = mail.retr(i + 1)
     except:
         continue
-
-    # Ghép nối các dòng để tạo thành nội dung email hoàn chỉnh
     msg_data = b'\r\n'.join(lines)
     msg = email.message_from_bytes(msg_data)
 
