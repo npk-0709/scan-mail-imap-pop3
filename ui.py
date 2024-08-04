@@ -29,14 +29,17 @@ class Ui_MainWindow(object):
         self.btnEvent.setGeometry(QtCore.QRect(180, 100, 171, 41))
         self.btnEvent.setObjectName("btnEvent")
         self.count = QtWidgets.QSpinBox(self.centralwidget)
-        self.count.setGeometry(QtCore.QRect(290, 50, 71, 22))
+        self.count.setGeometry(QtCore.QRect(290, 70, 71, 22))
         self.count.setObjectName("count")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(170, 45, 91, 31))
+        self.label_2.setGeometry(QtCore.QRect(170, 65, 91, 31))
         self.label_2.setObjectName("label_2")
+        self.account = QtWidgets.QLineEdit(self.centralwidget)
+        self.account.setGeometry(QtCore.QRect(150, 40, 231, 20))
+        self.account.setObjectName("account")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 520, 24))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 520, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
 
@@ -49,6 +52,7 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "TOOL ĐỌC HOTMAIL - IMAP"))
         self.btnEvent.setText(_translate("MainWindow", "CHẠY"))
         self.label_2.setText(_translate("MainWindow", "SỐ LƯỢNG"))
+        self.account.setPlaceholderText(_translate("MainWindow", "USERNAME |  PASSWORD"))
 
 
 if __name__ == "__main__":
