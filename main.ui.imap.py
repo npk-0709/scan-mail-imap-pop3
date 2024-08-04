@@ -1,12 +1,13 @@
 from ui import *
 from class_read_imap import *
+import threading
 
 
 class APP(Ui_MainWindow):
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)
 
-        self.btnEvent.clicked.connect(lambda: self.run())
+        self.btnEvent.clicked.connect(lambda: threading.Thread(target=self.run).start())
 
     def run(self):
         self.btnEvent.setText("ĐANG CHẠY...")
